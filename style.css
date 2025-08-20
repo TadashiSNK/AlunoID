@@ -5,8 +5,8 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to bottom, #4e4588, #2677b9);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -25,9 +25,13 @@ input:focus{
 
 
 .logo{
+    -webkit-text-stroke: 1px white; /* subtle stroke for better contrast */
+    background: linear-gradient(to bottom, #2c72c2, #4951b4);;
     display:inline-flex;
     margin-bottom: 45px;
     font-size: 45px;
+    /* border: 2px solid aqua; */
+    border-radius: 10px;
 }
 
 .ALUNOid-TAG{
@@ -38,8 +42,23 @@ input:focus{
     color: rgb(31, 43, 211);
 }
 
+.cadastro-redirect{
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    width: 160px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(48, 179, 59);
+}
 
-
+.cadastro-redirect:visited{
+    color: black;
+}
 
 
 
@@ -51,7 +70,7 @@ input:focus{
     justify-content: center;
     height: 100dvh;
     width: 100%;
-    border: 5px dotted black;
+    /* border: 5px dotted black; */
 
 }
 

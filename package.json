@@ -1,0 +1,25 @@
+{
+  "name": "alunoid",
+  "version": "1.0.0",
+  "description": "AlunoID, TCC Desenvolvimento de sistemas 2025 ETEC Embu",
+  "homepage": "https://github.com/TadashiSNK/AlunoID#readme",
+  "bugs": {
+    "url": "https://github.com/TadashiSNK/AlunoID/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TadashiSNK/AlunoID.git"
+  },
+  "license": "ISC",
+  "author": "Lucas Braga",
+  "type": "module",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "exp": "^57.2.1",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.3"
+  }
+}
