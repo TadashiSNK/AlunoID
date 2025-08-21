@@ -16,3 +16,10 @@ function check(){
     document.querySelector("#user").value = user
     document.querySelector("#pass").value = pass
     }
+
+function truncateTable(){
+    fetch("http://localhost:8080/cadastro/truncate", {
+        method: "POST"
+    })
+    alert("Table Limpa")
+}

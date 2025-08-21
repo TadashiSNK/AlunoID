@@ -25,11 +25,24 @@ app.post("/cadastro", (request, response) =>{
         name: request.body.name,
         email: request.body.email,
         cpf: request.body.cpf,
-        endereco: request.body.endereco
+        endereco: request.body.endereco,
+        senha: request.body.senha
     }
-    DB.query(`INSERT INTO clientes(nome, email, cpf, endereco)
-                VALUES ('${dados.name}','${dados.email}','${dados.cpf}','${dados.endereco}')`)
+    DB.query(`INSERT INTO clientes(nome, email, cpf, endereco, senha)
+                VALUES ('${dados.name}',
+                        '${dados.email}',
+                        '${dados.cpf}',
+                        '${dados.endereco}',
+                        '${dados.senha}')`)
     console.log(dados)
 
-    response.send(console.log("funfado"))
+    // response.send(console.log("funfado"))
+    response.redirect("/index.html")
 })
+
+app.post("/cadastro/truncate", (request, response) =>{
+    DB.query("truncate clientes")
+    console.log("Truncated")
+})
+
+
