@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f4f3f2
+}
+
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 100dvh;
+    width: 100%;
+    /* border: 5px dotted black; */
+
+}
+
+.login-box{
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    width: 600px;
+    /* background-color: lightblue; */
+    border: solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px grey;
+
+}
+
+
+/* 1° DIV DO LOGIN BOX */
+#logo-div{
+    justify-content: start;
+    width: 100%;
+    height: 25%;
+    /* background-color: pink; */
+}
+
+/* IMAGEM */
+#logo-div img{
+    height: 'auto';
+    width: 40%;
+    object-fit: fill;
+
+}
+
+
+
+/* ALUNO ID TEXTO */
+#AlunoID{
+    flex-direction: row;
+    align-items: end;
+    justify-content: start;
+    /* background-color: white; */
+    width: 60%;
+    height: 100%;
+}
+
+#AlunoID h2{
+    background: linear-gradient(to bottom, #74FFF8, #6FC0FA);
+    background-clip: text;
+    color: transparent;
+    font-size: 100px;
+}
+
+#AlunoID #ID{
+    color: black;
+}
+/* ALUNO ID TEXTO */
+
+
+#tipo-usuario{
+    width: 100%;
+    height: 10%;
+    /* background-color: yellow; */
+}
+
+
+/* CPF E SENHA, 3° DIVISAO DO LOGIN BOX */
+#CPF-SENHA{
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    /* background-color: tomato; */
+}
+
+#CPF-SENHA form{
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    /* background-color: grey; */
+}
+
+#CPF-SENHA input{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    caret-color: yellow;
+    height: 50px;
+    width: 50%;
+    transition: 150ms;
+}
+
+#CPF-SENHA input::placeholder{
+    font-size: 20px;
+}
+
+#CPF-SENHA input:focus{
+    border-bottom: 4px solid white;
+
+}
+
+#CPF-SENHA button{
+    width: 53%;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #3DC2FF;
+}
