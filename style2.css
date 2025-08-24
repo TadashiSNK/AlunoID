@@ -28,16 +28,16 @@ body{
     height: 600px;
     width: 600px;
     /* background-color: lightblue; */
-    border: solid black;
+    /* border: solid black;
     border-radius: 10px;
-    box-shadow: 10px 10px 50px grey;
+    box-shadow: 10px 10px 50px grey; */
 
 }
 
 
 /* 1° DIV DO LOGIN BOX */
 #logo-div{
-    justify-content: start;
+    justify-content: center;
     width: 100%;
     height: 25%;
     /* background-color: pink; */
@@ -46,8 +46,9 @@ body{
 /* IMAGEM */
 #logo-div img{
     height: 'auto';
-    width: 40%;
+    width: 20%;
     object-fit: fill;
+    /* background-color: yellow; */
 
 }
 
