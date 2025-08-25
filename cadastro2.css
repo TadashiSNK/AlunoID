@@ -1,0 +1,20 @@
+input{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    caret-color: black;
+    height: 50px;
+    width: 50%;
+    transition: 100ms;
+}
+
+input::placeholder{
+    font-size: 20px;
+}
+
+input:focus{
+    border-bottom: 2px solid rgb(170, 255, 255);
+
+}

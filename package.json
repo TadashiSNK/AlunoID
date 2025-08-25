@@ -20,6 +20,7 @@
   "dependencies": {
     "exp": "^57.2.1",
     "express": "^5.1.0",
-    "mysql2": "^3.14.3"
+    "mysql2": "^3.14.3",
+    "sweetalert2": "^11.22.4"
   }
 }

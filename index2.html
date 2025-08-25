@@ -24,14 +24,13 @@
             </div>
 
             <div class="flex-center" id="CPF-SENHA">
-                <form class="flex-center">
-                    <input type="text" placeholder="E-mail/CPF" id="username">
-                    <input type="password" placeholder="Senha" id="senha">
-                    <button>ENTRAR</button>
+                <form action="http://localhost:8080/login" method="post" class="flex-center">
+                    <input type="text" name="name" placeholder="E-mail/CPF" id="username">
+                    <input type="password" name="senha" placeholder="Senha" id="senha">
+                    <button type="submit">ENTRAR</button>
+                    <a onclick="event.stopPropagation()" href="./cadastro2.html" class="flex-center" id="cadastro-btn">Cadastre-se</a>
+                    <a href="google.com" id="esqueci-senha">Esqueci minha senha</a>
                 </form>
-            </div>
-
-            <div class="flex-center">
             </div>
 
 

@@ -7,7 +7,7 @@ const DB = mysql.createPool({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'loja'
+    database: 'AlunoIDSQL'
 }).promise()
 
 const app = express()
@@ -23,21 +23,23 @@ app.listen(PORT, () => {console.log(`Server ta online, A porta é: ${PORT}`)})
 app.post("/cadastro", (request, response) =>{
     const dados = {
         name: request.body.name,
-        email: request.body.email,
-        cpf: request.body.cpf,
-        endereco: request.body.endereco,
         senha: request.body.senha
     }
-    DB.query(`INSERT INTO clientes(nome, email, cpf, endereco, senha)
-                VALUES ('${dados.name}',
-                        '${dados.email}',
-                        '${dados.cpf}',
-                        '${dados.endereco}',
-                        '${dados.senha}')`)
+    DB.query(`INSERT INTO users(usernames, passwords)VALUES ("${dados.name}","${dados.senha}")`);
     console.log(dados)
 
     // response.send(console.log("funfado"))
-    response.redirect("/index.html")
+    response.redirect("/index2.html")
+})
+
+app.post("/login", (request, response) =>{
+    const dados = {
+        name: request.body.name,
+        senha: request.body.senha
+    }
+    console.log(dados)
+
+    response.redirect("/index2.html")
 })
 
 app.post("/cadastro/truncate", (request, response) =>{

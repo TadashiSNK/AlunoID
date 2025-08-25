@@ -1,12 +1,33 @@
 * {
+    font-family: "Roboto Serif", serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: #f4f3f2
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.border{
+    background-color: pink;
+    border: 2px solid black;
 }
+.borderW{
+    background-color: white;
+    border: 2px solid black;
+}
+
+body{
+    background-color: #F2F2F2;
+    font-family: "Roboto Serif", serif;
+} 
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: black;
+}
+
 
 
 .flex-center{
@@ -107,7 +128,7 @@ body{
     border: none;
     border-bottom: 1px solid black;
     outline: none;
-    caret-color: yellow;
+    caret-color: black;
     height: 50px;
     width: 50%;
     transition: 150ms;
@@ -127,4 +148,30 @@ body{
     height: 55px;
     border-radius: 10px;
     background-color: #3DC2FF;
+    border: 2px solid black;
+    cursor: pointer;
 }
+
+#cadastro-btn{
+    width: 53%;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #04AA6D;
+    border: 2px solid black;
+}
+
+#cadastro-btn:hover{
+    cursor: pointer;
+}
+
+#esqueci-senha{
+    color: #0000EE;
+    text-decoration-line: underline;
+}
+
+
+
+
+
+
+
